@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Contact.h"
+#import "Contact+Calculated.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSManagedObjectContext *context = self.managedObjectContext;
+    Contact *contact = [NSEntityDescription insertNewObjectForEntityForName:@"Contact" inManagedObjectContext:context];
+    
+    contact.firstName = @"";
+    NSError *error;
+    
+    NSArray *myItems = [context executeFetchRequest:[NSFetchRequest fetchRequestWithEntityName:@"Contact"] error:&error];
+    
+    
+    [context save:&error];
+    if (error){
+        NSLog(@"Here it is %@", error);
+    }
+    
+    Contact *contactData = [myItems objectAtIndex:0];
+    NSLog(@"Contact name %@", [contactData fullName]);
     return YES;
 }
 

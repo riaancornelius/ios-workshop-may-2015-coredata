@@ -15,6 +15,10 @@
 		C0FC71D11B0CF2B100806B50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FC71D01B0CF2B100806B50 /* Images.xcassets */; };
 		C0FC71D41B0CF2B100806B50 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0FC71D21B0CF2B100806B50 /* LaunchScreen.xib */; };
 		C0FC71E01B0CF2B100806B50 /* CoreDataExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FC71DF1B0CF2B100806B50 /* CoreDataExampleTests.m */; };
+		C0FC71EB1B0CF6EF00806B50 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FC71EA1B0CF6EF00806B50 /* Address.m */; };
+		C0FC71EE1B0CF6EF00806B50 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FC71ED1B0CF6EF00806B50 /* Contact.m */; };
+		C0FC71F11B0CF8C200806B50 /* Contact+Calculated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FC71F01B0CF8C200806B50 /* Contact+Calculated.m */; };
+		C0FC71F41B0CFBC500806B50 /* Contact+Duplicated.m in Sources */ = {isa = PBXBuildFile; fileRef = C0FC71F31B0CFBC500806B50 /* Contact+Duplicated.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		C0FC71D91B0CF2B100806B50 /* CoreDataExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0FC71DE1B0CF2B100806B50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0FC71DF1B0CF2B100806B50 /* CoreDataExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataExampleTests.m; sourceTree = "<group>"; };
+		C0FC71E91B0CF6EF00806B50 /* Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		C0FC71EA1B0CF6EF00806B50 /* Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		C0FC71EC1B0CF6EF00806B50 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		C0FC71ED1B0CF6EF00806B50 /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		C0FC71EF1B0CF8C200806B50 /* Contact+Calculated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contact+Calculated.h"; sourceTree = "<group>"; };
+		C0FC71F01B0CF8C200806B50 /* Contact+Calculated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contact+Calculated.m"; sourceTree = "<group>"; };
+		C0FC71F21B0CFBC500806B50 /* Contact+Duplicated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Contact+Duplicated.h"; sourceTree = "<group>"; };
+		C0FC71F31B0CFBC500806B50 /* Contact+Duplicated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Contact+Duplicated.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +95,14 @@
 		C0FC71BF1B0CF2B100806B50 /* CoreDataExample */ = {
 			isa = PBXGroup;
 			children = (
+				C0FC71EC1B0CF6EF00806B50 /* Contact.h */,
+				C0FC71EF1B0CF8C200806B50 /* Contact+Calculated.h */,
+				C0FC71F01B0CF8C200806B50 /* Contact+Calculated.m */,
+				C0FC71F21B0CFBC500806B50 /* Contact+Duplicated.h */,
+				C0FC71F31B0CFBC500806B50 /* Contact+Duplicated.m */,
+				C0FC71ED1B0CF6EF00806B50 /* Contact.m */,
+				C0FC71E91B0CF6EF00806B50 /* Address.h */,
+				C0FC71EA1B0CF6EF00806B50 /* Address.m */,
 				C0FC71C41B0CF2B100806B50 /* AppDelegate.h */,
 				C0FC71C51B0CF2B100806B50 /* AppDelegate.m */,
 				C0FC71CA1B0CF2B100806B50 /* ViewController.h */,
@@ -225,6 +245,10 @@
 				C0FC71C61B0CF2B100806B50 /* AppDelegate.m in Sources */,
 				C0FC71C31B0CF2B100806B50 /* main.m in Sources */,
 				C0FC71CC1B0CF2B100806B50 /* ViewController.m in Sources */,
+				C0FC71EB1B0CF6EF00806B50 /* Address.m in Sources */,
+				C0FC71EE1B0CF6EF00806B50 /* Contact.m in Sources */,
+				C0FC71F41B0CFBC500806B50 /* Contact+Duplicated.m in Sources */,
+				C0FC71F11B0CF8C200806B50 /* Contact+Calculated.m in Sources */,
 				C0FC71C91B0CF2B100806B50 /* CoreDataExample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

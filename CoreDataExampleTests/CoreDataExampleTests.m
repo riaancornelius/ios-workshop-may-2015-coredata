@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "Contact+Calculated.h"
+#import "Contact+Duplicated.h"
 
 @interface CoreDataExampleTests : XCTestCase
 
@@ -27,6 +29,8 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
+    //Contact *contact = [[Contact alloc] init];
+    //[contact fullName];
     XCTAssert(YES, @"Pass");
 }
 
